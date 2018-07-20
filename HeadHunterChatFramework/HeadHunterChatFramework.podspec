@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT (example)"
 
   s.author             = { "" => "" }
-  s.source       = { :git => "https://github.com/wannafunk/HHCHat",, :branch => "master" }
+  s.source       = { :git => "https://github.com/wannafunk/HHCHat", :branch => "master" }
 
   s.source_files  = "ChatModuleAssembly"
 
