@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatInputBar" customModule="HeadHunterChat" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="H9Y-WX-WmY"/>
+                <outlet property="outputButton" destination="VAN-Uv-8c2" id="rnr-sa-eL9"/>
+                <outlet property="shadowView" destination="tfy-OL-BeI" id="86r-hy-Ol7"/>
+                <outlet property="textView" destination="hea-in-HOR" id="RW7-5K-Gvr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d6Y-VO-b4W">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAu-kz-Kbs">
+                            <rect key="frame" x="0.0" y="8" width="20" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="GHO-cK-vGH"/>
+                                <constraint firstAttribute="height" constant="24" id="Y8n-0l-MEm"/>
+                            </constraints>
+                            <state key="normal" image="FileIcon"/>
+                            <connections>
+                                <action selector="addFileAction:" destination="-1" eventType="touchUpInside" id="oqc-58-kVT"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfy-OL-BeI">
+                            <rect key="frame" x="36" y="0.0" width="339" height="40"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hea-in-HOR" customClass="PlaceholderTextView" customModule="HeadHunterChat" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="295" height="40"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAN-Uv-8c2">
+                                    <rect key="frame" x="303" y="4" width="32" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="32" id="m5Y-Sf-M88"/>
+                                        <constraint firstAttribute="height" constant="32" id="q1r-oV-ECD"/>
+                                    </constraints>
+                                    <state key="normal" image="SendGrayIcon"/>
+                                    <connections>
+                                        <action selector="sendMessageAction:" destination="-1" eventType="touchUpInside" id="cZs-27-JTB"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="hea-in-HOR" firstAttribute="top" secondItem="tfy-OL-BeI" secondAttribute="top" id="0F5-wF-Xkn"/>
+                                <constraint firstItem="hea-in-HOR" firstAttribute="leading" secondItem="tfy-OL-BeI" secondAttribute="leading" id="5Kd-F1-eWh"/>
+                                <constraint firstAttribute="bottom" secondItem="hea-in-HOR" secondAttribute="bottom" id="Qm3-aY-jaj"/>
+                                <constraint firstItem="VAN-Uv-8c2" firstAttribute="leading" secondItem="hea-in-HOR" secondAttribute="trailing" constant="8" id="e9w-s1-cAp"/>
+                                <constraint firstItem="VAN-Uv-8c2" firstAttribute="centerY" secondItem="hea-in-HOR" secondAttribute="centerY" id="gWd-Or-WnF"/>
+                                <constraint firstAttribute="trailing" secondItem="VAN-Uv-8c2" secondAttribute="trailing" constant="4" id="l2y-yl-YBv"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="YAu-kz-Kbs" firstAttribute="centerY" secondItem="hea-in-HOR" secondAttribute="centerY" id="Fgy-km-sJ3"/>
+                        <constraint firstAttribute="trailing" secondItem="tfy-OL-BeI" secondAttribute="trailing" id="IWy-4E-9yr"/>
+                        <constraint firstItem="tfy-OL-BeI" firstAttribute="leading" secondItem="YAu-kz-Kbs" secondAttribute="trailing" constant="16" id="MPI-Ns-JMv"/>
+                        <constraint firstItem="YAu-kz-Kbs" firstAttribute="leading" secondItem="d6Y-VO-b4W" secondAttribute="leading" id="Tsv-dB-QX3"/>
+                        <constraint firstItem="tfy-OL-BeI" firstAttribute="top" secondItem="d6Y-VO-b4W" secondAttribute="top" id="qQA-1n-7cL"/>
+                        <constraint firstAttribute="bottom" secondItem="tfy-OL-BeI" secondAttribute="bottom" id="wgb-En-lcH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="d6Y-VO-b4W" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="NJv-wk-wHW"/>
+                <constraint firstItem="d6Y-VO-b4W" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Pvm-x6-1Lc"/>
+                <constraint firstAttribute="bottom" secondItem="d6Y-VO-b4W" secondAttribute="bottom" id="YLt-E5-XSH"/>
+                <constraint firstItem="d6Y-VO-b4W" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="mcE-bS-YW8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="d6Y-VO-b4W" secondAttribute="trailing" id="mmH-RK-xWG"/>
+                <constraint firstItem="d6Y-VO-b4W" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yP8-GN-wFx"/>
+                <constraint firstItem="d6Y-VO-b4W" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="zR9-rC-g3B"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="162"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FileIcon" width="20" height="24"/>
+        <image name="SendGrayIcon" width="32" height="32"/>
+    </resources>
+</document>

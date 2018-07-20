@@ -1,0 +1,49 @@
+PODS:
+  - FLAnimatedImage (1.0.12)
+  - NYTPhotoViewer (2.0.0):
+    - NYTPhotoViewer/AnimatedGifSupport (= 2.0.0)
+    - NYTPhotoViewer/Core (= 2.0.0)
+  - NYTPhotoViewer/AnimatedGifSupport (2.0.0):
+    - FLAnimatedImage (~> 1.0.12)
+    - NYTPhotoViewer/Core
+  - NYTPhotoViewer/Core (2.0.0)
+  - SDWebImage (4.4.1):
+    - SDWebImage/Core (= 4.4.1)
+  - SDWebImage/Core (4.4.1)
+  - SQLite.swift (0.11.5):
+    - SQLite.swift/standard (= 0.11.5)
+  - SQLite.swift/standard (0.11.5)
+  - SwiftLint (0.26.0)
+  - Typist (1.2.1)
+  - WebimClientLibrary (3.14.2):
+    - SQLite.swift
+
+DEPENDENCIES:
+  - NYTPhotoViewer
+  - SDWebImage (~> 4.0)
+  - SwiftLint
+  - Typist
+  - WebimClientLibrary
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FLAnimatedImage
+    - NYTPhotoViewer
+    - SDWebImage
+    - SQLite.swift
+    - SwiftLint
+    - Typist
+    - WebimClientLibrary
+
+SPEC CHECKSUMS:
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  NYTPhotoViewer: 34b8bd6bcc297466adec1668f9a01249d73c90e6
+  SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
+  SQLite.swift: 6e5356850bb1791459f8c16d6ee9195b28714a2e
+  SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
+  Typist: 88b462c1c5adc6d4e8601773fcb0b7d7113d18af
+  WebimClientLibrary: e444bc491b79c8c0d7432d288b91dbf6ae391ddb
+
+PODFILE CHECKSUM: 9123e9df3d870b47a41b7a6ad8afa484d83786b4
+
+COCOAPODS: 1.5.3

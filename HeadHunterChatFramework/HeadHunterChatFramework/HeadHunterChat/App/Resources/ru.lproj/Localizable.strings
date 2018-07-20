@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  HeadHunterChat
+
+  Created by 12345 on 05.07.2018.
+  Copyright © 2018 Stanislav Kramarenko. All rights reserved.
+*/
+
+"Help" = "Помощь";
+"Write your question" = "Напишите свой вопрос...";
+"File is unavailable" = "Файл недоступен";
+"Needs photo access" = "Необходим доступ к фотографиям";
+"Сancel" = "Отмена";
+"Settings" = "Настройки";
+"Error occurred while accessing your photos.\nPlease check your settings." = "При доступе к фотографиям произошла ошибка.\nПожалуйста, проверьте свои настройки.";

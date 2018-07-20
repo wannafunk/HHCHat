@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BubbleCountView" customModule="HeadHunterChat" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="jqZ-qt-y8H" id="nxQ-mW-6RS"/>
+                <outlet property="countLabel" destination="uox-fm-gR6" id="Dkp-g3-rY1"/>
+                <outlet property="countView" destination="GBr-ha-8LP" id="O76-fh-abK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="jqZ-qt-y8H">
+            <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GBr-ha-8LP">
+                    <rect key="frame" x="0.0" y="0.0" width="62" height="62"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.10000000000000001" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uox-fm-gR6">
+                            <rect key="frame" x="31.5" y="31" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.71551591157913208" blue="0.99420994520187378" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uox-fm-gR6" secondAttribute="bottom" constant="2" id="2AM-on-Opl"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="uox-fm-gR6" secondAttribute="trailing" constant="2" id="AxS-dx-PWE"/>
+                        <constraint firstAttribute="width" secondItem="GBr-ha-8LP" secondAttribute="height" multiplier="1:1" id="JXr-gP-nzu"/>
+                        <constraint firstItem="uox-fm-gR6" firstAttribute="centerY" secondItem="GBr-ha-8LP" secondAttribute="centerY" id="j2Z-Hm-71j"/>
+                        <constraint firstItem="uox-fm-gR6" firstAttribute="centerX" secondItem="GBr-ha-8LP" secondAttribute="centerX" id="lKZ-ME-RSF"/>
+                        <constraint firstItem="uox-fm-gR6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="GBr-ha-8LP" secondAttribute="leading" constant="2" id="sP9-ft-3sU"/>
+                        <constraint firstItem="uox-fm-gR6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="GBr-ha-8LP" secondAttribute="top" constant="2" id="wcP-iO-RGQ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="GBr-ha-8LP" firstAttribute="leading" secondItem="lfu-B5-Rs7" secondAttribute="leading" id="6jp-8y-oy1"/>
+                <constraint firstItem="lfu-B5-Rs7" firstAttribute="bottom" secondItem="GBr-ha-8LP" secondAttribute="bottom" id="FFB-VC-M3h"/>
+                <constraint firstItem="lfu-B5-Rs7" firstAttribute="trailing" secondItem="GBr-ha-8LP" secondAttribute="trailing" id="YZK-So-HRA"/>
+                <constraint firstItem="GBr-ha-8LP" firstAttribute="top" secondItem="lfu-B5-Rs7" secondAttribute="top" id="wmQ-6X-T6P"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="lfu-B5-Rs7"/>
+            <point key="canvasLocation" x="-114" y="337"/>
+        </view>
+    </objects>
+</document>
